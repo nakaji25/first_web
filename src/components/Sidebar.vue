@@ -111,14 +111,16 @@ export default {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 240px;
+  width: 200px;
   min-height: 100vh;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
+  border-right: solid 1px #2c3e50;
   background: rgba(197, 197, 197, 1);
 }
 @media screen and (max-width: 720px) {
   .sidebar-container {
     right: 0;
+    border-left: solid 1px #2c3e50;
   }
 }
 

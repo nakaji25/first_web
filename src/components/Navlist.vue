@@ -1,9 +1,15 @@
 <template>
   <div class="nav-list-wrapper">
     <ul class="nav-list">
-      <li class="nav-list-item"><a href="#"><router-link to="/">Home</router-link></a></li>
-      <li class="nav-list-item"><a href="#"><router-link to="/about">About</router-link></a></li>
-      <li class="nav-list-item"><a href="#"><router-link to="/products">Products</router-link></a></li>
+      <li class="nav-list-item">
+        <a href="#"><router-link to="/">Profile</router-link></a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#"><router-link to="/about">About</router-link></a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#"><router-link to="/products">Products</router-link></a>
+      </li>
     </ul>
   </div>
 </template>
@@ -24,7 +30,7 @@
   font-size: 16px;
   font-weight: 700;
 }
-.nav-list-item a:hover{
+.nav-list-item a:hover {
   background: #40b983;
   opacity: 0.8;
   color: #fff;

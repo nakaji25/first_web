@@ -1,11 +1,4 @@
 <template>
-  <!--
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/products">Products</router-link>
-  </div>
-  -->
   <div id="app">
     <div class="app-container">
       <sidebar></sidebar>
@@ -35,12 +28,17 @@ export default {
   background: #ddd;
 }
 
-.page-container h1 {
-  padding-top: 50px;
+.header-container {
+  height: 54px;
+  margin-top: 0px;
+  padding: 6px;
+  background-color: rgba(197, 197, 197, 1);
+  border-bottom: solid 1px #2c3e50;
 }
+
 @media screen and (min-width: 720px) {
-  .page-container h1 {
-    padding-left: 240px;
+  .page-container {
+    padding-left: 200px;
   }
 }
 
