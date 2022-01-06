@@ -3,6 +3,9 @@
     <div class="app-container">
       <sidebar></sidebar>
       <div class="page-container">
+        <header class="header-container">
+          <h1>{{ this.$route.name }}</h1>
+        </header>
         <router-view />
       </div>
     </div>
@@ -26,6 +29,7 @@ export default {
 }
 .page-container {
   background: #ddd;
+  text-align: left;
 }
 
 .header-container {
@@ -34,6 +38,7 @@ export default {
   padding: 6px;
   background-color: rgba(197, 197, 197, 1);
   border-bottom: solid 1px #2c3e50;
+  text-align: center;
 }
 
 @media screen and (min-width: 720px) {
@@ -43,10 +48,11 @@ export default {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -54,6 +60,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   background: #ddd;
+  box-sizing: border-box;
 }
 
 #nav {

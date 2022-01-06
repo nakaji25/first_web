@@ -2,13 +2,13 @@
   <div class="nav-list-wrapper">
     <ul class="nav-list">
       <li class="nav-list-item">
-        <a href="#"><router-link to="/">Profile</router-link></a>
+        <router-link to="/">Profile</router-link>
       </li>
       <li class="nav-list-item">
-        <a href="#"><router-link to="/about">About</router-link></a>
+        <router-link to="/about">About</router-link>
       </li>
       <li class="nav-list-item">
-        <a href="#"><router-link to="/products">Products</router-link></a>
+        <router-link to="/products">Products</router-link>
       </li>
     </ul>
   </div>

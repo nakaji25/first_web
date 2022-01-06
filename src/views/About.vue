@@ -1,9 +1,5 @@
 <template>
-  <header class="header-container">
-    <div class="about-container">
-      <h1>About</h1>
-    </div>
-  </header>
+  <div></div>
 </template>
 
 <style></style>
