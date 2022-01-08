@@ -31,8 +31,9 @@
 <script>
 /* 回答を書く */
 import navlist from "./Navlist.vue";
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   data() {
     return {
       ActiveBtn: false,
@@ -59,7 +60,7 @@ export default {
   components: {
     navlist,
   },
-};
+});
 </script>
 
 <style>
