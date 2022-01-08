@@ -1,7 +1,10 @@
 <template>
   <div class="default-container">
     <div class="title">
-      <h1>Nakaji</h1>
+      <div class="myinfo">
+        <img class="icon" src="@/assets/nakaji.svg" />
+        <h1>Nakaji</h1>
+      </div>
     </div>
     <div class="title">
       <h2>Introduction</h2>
@@ -27,7 +30,6 @@ import { defineComponent } from "vue";
 export default defineComponent({
   data() {
     return {
-      title: "Profile",
       introduction:
         "東京理科大学工学部情報工学科3年。\n 大学の授業では、人工知能やe-learningの勉強をしており、独学ではUnityでのゲーム作成をおこなっている。\n サークルではアニメ・声優研究会に所属している。\n また、幼少期からボーイスカウトに所属し現在まで続けている。",
       careers: [
@@ -45,7 +47,11 @@ export default defineComponent({
 
 <style>
 .title {
-  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
 }
 .main-container {
   margin-left: 50px;
@@ -58,9 +64,33 @@ export default defineComponent({
 }
 .time {
   font-weight: bold;
-  color: red;
+  color: #da0;
 }
 .text {
   padding: 12px;
+}
+.icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px 20px 20px 50px;
+}
+.myinfo {
+  display: flex;
+  align-items: center;
+}
+.myinfo h1 {
+  padding-left: 50px;
+}
+@media screen and (max-width: 720px) {
+  .icon {
+    margin: 20px;
+  }
+  .myinfo {
+    justify-content: center;
+  }
+  .myinfo h1 {
+    padding-left: 20px;
+  }
 }
 </style>

@@ -79,7 +79,7 @@ export default {
   left: 20px;
   width: 32px;
   height: 2px;
-  background: #333333;
+  background: #fff;
   text-align: center;
 }
 
@@ -108,6 +108,7 @@ export default {
   transition: 0.4s ease;
 }
 .sidebar-container {
+  z-index: 2;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -115,7 +116,7 @@ export default {
   min-height: 100vh;
   padding: 4rem 1rem;
   border-right: solid 1px #2c3e50;
-  background: rgba(197, 197, 197, 1);
+  background: #000;
 }
 @media screen and (max-width: 720px) {
   .sidebar-container {

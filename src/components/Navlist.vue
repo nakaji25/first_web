@@ -20,18 +20,20 @@
 }
 .nav-list-item {
   list-style: none;
-  padding: 8px 0;
+  padding: 4px 0;
 }
 .nav-list-item a {
-  color: #40b983;
+  color: #fff;
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
+  padding: 12px 0;
+  border-radius: 32px;
 }
 .nav-list-item a:hover {
-  background: #40b983;
+  background: #da0;
   opacity: 0.8;
   color: #fff;
 }
