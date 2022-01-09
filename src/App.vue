@@ -30,7 +30,7 @@ export default {
   min-height: 100vh;
 }
 .page-container {
-  padding-top: 54px;
+  margin-top: 54px;
   background: #000000;
   text-align: left;
 }
@@ -45,6 +45,7 @@ export default {
   background-color: #000000;
   border-bottom: solid 1px #2c3e50;
   text-align: center;
+  z-index: 20;
 }
 
 @media screen and (min-width: 720px) {
@@ -68,6 +69,23 @@ export default {
   box-sizing: inherit;
 }
 
+.fade-enter-active {
+  transition: opacity 1s;
+  opacity: 0;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: opacity 3s;
+  opacity: 1;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -89,21 +107,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #fff;
-}
-
-.fade-enter-active {
-  transition: opacity 1s;
-  opacity: 0;
-}
-.fade-enter-to {
-  opacity: 1;
-}
-
-.fade-leave-active {
-  transition: opacity 3s;
-  opacity: 1;
-}
-.fade-leave-to {
-  opacity: 0;
 }
 </style>

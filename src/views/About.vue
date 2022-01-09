@@ -1,13 +1,19 @@
 <template>
   <div class="default-container">
     <div class="title">
-      <h2>University</h2>
+      <h1>First</h1>
+    </div>
+    <div class="main-container">
+      {{ first }}
+    </div>
+    <div class="title">
+      <h1>University</h1>
     </div>
     <div class="subtitle">
       <h3>Course</h3>
     </div>
-    <div class="main-container">
-      <h3>{{ course }}</h3>
+    <div class="large-text">
+      {{ course }}
     </div>
     <div class="subtitle">
       <h3>Lessons</h3>
@@ -19,10 +25,28 @@
       </ul>
     </div>
     <div class="title">
-      <h2>Boy Scouts</h2>
+      <h1>Boy Scouts</h1>
+    </div>
+    <div class="subtitle">
+      <h3>Group</h3>
+    </div>
+    <div class="large-text">
+      {{ group }}
+    </div>
+    <div class="subtitle">
+      <h3>Details</h3>
     </div>
     <div class="main-container">
-      <h3>神奈川連盟横浜第8団</h3>
+      {{ details }}
+    </div>
+    <div class="subtitle">
+      <h3>Activities</h3>
+    </div>
+    <div class="main-container">
+      <ul class="main-text" v-for="(activity, key) in activities" :key="key">
+        <li class="time">{{ activity.time }}</li>
+        <li class="text">{{ activity.text }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -33,6 +57,8 @@ import { defineComponent } from "vue";
 export default defineComponent({
   data() {
     return {
+      first:
+        "このページは自分がこれまでに学んできたことや課外活動について記載する。",
       course: "東京理科大学 工学部 情報工学科",
       university: [
         {
@@ -45,6 +71,25 @@ export default defineComponent({
           text: "Pythonでの画像変換、データマイニング、人工知能。R言語ではテキストマイニングなど。",
         },
       ],
+      group: "ボーイスカウト 神奈川連盟 横浜第8団",
+      details:
+        "ボーイスカウトとはイギリス発祥の青少年教育活動であり、おもな活動はキャンプ、ハイキングなどの野外活動や募金、清掃奉仕などの奉仕活動である。",
+      activities: [
+        // {
+        //   time: "2005年9月",
+        //   text: "ボーイスカウト 神奈川連盟 横浜第8団 ビーバー隊に入隊",
+        // },
+        // { time: "2007年9月", text: "カブ隊に上進" },
+        // { time: "2010年9月", text: "ボーイ隊に上進" },
+        {
+          time: "2013年4月",
+          text: "岩手県大船渡市に東日本大震災の義援金を届ける",
+        },
+        { time: "2013年7月", text: "第16回日本スカウトジャンボリーに参加" },
+        // { time: "2014年9月", text: "ベンチャー隊に上進" },
+        { time: "2015年7月", text: "第23回世界スカウトジャンボリー参加" },
+        { time: "2016年8月", text: "第5回横浜地区キャンポリー参加" },
+      ],
     };
   },
 });
@@ -52,10 +97,7 @@ export default defineComponent({
 
 <style>
 .title {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 30px 15px 10px 15px;
 }
 .subtitle {
   padding-top: 15px;
@@ -77,5 +119,12 @@ export default defineComponent({
 }
 .text {
   padding: 10px;
+}
+.large-text {
+  font-size: 18px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 5px;
+  white-space: pre-line;
 }
 </style>
