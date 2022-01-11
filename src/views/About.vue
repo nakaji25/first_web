@@ -1,13 +1,13 @@
 <template>
   <div class="default-container">
     <div class="title">
-      <h1>First</h1>
+      <h2>First</h2>
     </div>
     <div class="main-container">
       {{ first }}
     </div>
     <div class="title">
-      <h1>University</h1>
+      <h2>University</h2>
     </div>
     <div class="subtitle">
       <h3>Course</h3>
@@ -25,7 +25,7 @@
       </ul>
     </div>
     <div class="title">
-      <h1>Boy Scouts</h1>
+      <h2>Boy Scouts</h2>
     </div>
     <div class="subtitle">
       <h3>Group</h3>
@@ -38,6 +38,19 @@
     </div>
     <div class="main-container">
       {{ details }}
+    </div>
+    <div class="main-container">
+      詳しくはこちらのページへ
+      <ul class="url-list">
+        <li>
+          <a href="https://www.scout.or.jp/">ボーイスカウト日本連盟</a>
+        </li>
+        <li>
+          <a href="https://bsyokohama-dai8dan.jimdo.com/"
+            >ボーイスカウト横浜8団</a
+          >
+        </li>
+      </ul>
     </div>
     <div class="subtitle">
       <h3>Activities</h3>
@@ -110,6 +123,9 @@ export default defineComponent({
   padding-left: 5px;
   white-space: pre-line;
 }
+.main-container a {
+  color: #fff;
+}
 .main-text {
   list-style: none;
 }
@@ -126,5 +142,9 @@ export default defineComponent({
   margin-right: 50px;
   padding-left: 5px;
   white-space: pre-line;
+}
+.url-list {
+  list-style: none;
+  padding: 4px 0;
 }
 </style>
