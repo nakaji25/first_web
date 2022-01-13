@@ -24,6 +24,21 @@
         <li class="text">{{ value.text }}</li>
       </ul>
     </div>
+    <div class="subtitle">
+      <h3>Club</h3>
+    </div>
+    <div class="large-text">
+      {{ club }}
+    </div>
+    <div class="subtitle">
+      <h3>Activities</h3>
+    </div>
+    <div class="main-container">
+      <ul class="main-text" v-for="(value, key) in animeclubs" :key="key">
+        <li class="time">{{ value.time }}</li>
+        <li class="text">{{ value.text }}</li>
+      </ul>
+    </div>
     <div class="title">
       <h2>Boy Scouts</h2>
     </div>
@@ -56,9 +71,9 @@
       <h3>Activities</h3>
     </div>
     <div class="main-container">
-      <ul class="main-text" v-for="(activity, key) in activities" :key="key">
-        <li class="time">{{ activity.time }}</li>
-        <li class="text">{{ activity.text }}</li>
+      <ul class="main-text" v-for="(value, key) in boyscouts" :key="key">
+        <li class="time">{{ value.time }}</li>
+        <li class="text">{{ value.text }}</li>
       </ul>
     </div>
   </div>
@@ -71,7 +86,7 @@ export default defineComponent({
   data() {
     return {
       first:
-        "このページは自分がこれまでに学んできたことや課外活動について記載する。",
+        "このページは自分がこれまでに学んできたことや課外活動について記載します。",
       course: "東京理科大学 工学部 情報工学科",
       university: [
         {
@@ -84,10 +99,17 @@ export default defineComponent({
           text: "Pythonでの画像変換、データマイニング、人工知能。R言語ではテキストマイニングなど。",
         },
       ],
+      club: "アニメ・声優研究会",
+      animeclubs: [
+        {
+          time: "2019年11月23日・24日",
+          text: "学園祭で声優のトークショーを開催 \n (23日:速水奨・野津山幸宏,24日:伊瀬茉莉也・平田裕香)",
+        },
+      ],
       group: "ボーイスカウト 神奈川連盟 横浜第8団",
       details:
         "ボーイスカウトとはイギリス発祥の青少年教育活動であり、おもな活動はキャンプ、ハイキングなどの野外活動や募金、清掃奉仕などの奉仕活動である。",
-      activities: [
+      boyscouts: [
         // {
         //   time: "2005年9月",
         //   text: "ボーイスカウト 神奈川連盟 横浜第8団 ビーバー隊に入隊",

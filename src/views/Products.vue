@@ -44,12 +44,40 @@
       {{ unity }}
     </div>
     <div class="subtitle">
+      <h3>ボールパズルゲーム</h3>
+    </div>
+    <img class="theball" src="@/assets/theball.png" alt="TheBallのプレイ画面" />
+    <div class="main-container">
+      <a href="https://github.com/nakaji25/Unity_TheBall"
+        >https://github.com/nakaji25/Unity_TheBall</a
+      >
+    </div>
+    <div class="subtitle">
       <h3>雲登りゲーム</h3>
     </div>
     <div class="main-container">
       <a href="https://github.com/nakaji25/ClimbCloud"
         >https://github.com/nakaji25/ClimbCloud</a
       >
+    </div>
+    <div class="title">
+      <h2>参考書</h2>
+    </div>
+    <div class="main-container">
+      <ul class="references-text">
+        <li>
+          UnityではじめるC# 基礎編 改訂版 <br />
+          <a href="https://books.mdn.co.jp/books/3220303029/"
+            >https://books.mdn.co.jp/books/3220303029/</a
+          >
+        </li>
+        <li>
+          Unityの教科書 Unity 2021完全対応版 <br />
+          <a href="https://www.sbcr.jp/product/4815611347/"
+            >https://www.sbcr.jp/product/4815611347/</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -89,8 +117,9 @@ export default defineComponent({
 .main-container a {
   color: #fff;
 }
-.main-text {
-  list-style: none;
+
+.references-text li {
+  padding-bottom: 10px;
 }
 .time {
   font-weight: bold;
@@ -105,5 +134,10 @@ export default defineComponent({
   margin-right: 50px;
   padding-left: 5px;
   white-space: pre-line;
+}
+.theball {
+  width: 120px;
+  height: 240px;
+  margin-left: 80px;
 }
 </style>

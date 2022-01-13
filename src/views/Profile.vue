@@ -3,7 +3,7 @@
     <div class="title">
       <div class="myinfo">
         <img class="icon" src="@/assets/nakaji.svg" alt="nakajiアイコン" />
-        <h1>Nakaji</h1>
+        <div class="name">Nakaji</div>
       </div>
     </div>
     <div class="title">
@@ -19,6 +19,17 @@
       <ul class="main-text" v-for="(career, key) in careers" :key="key">
         <li class="time">{{ career.time }}</li>
         <li class="text">{{ career.text }}</li>
+      </ul>
+    </div>
+    <div class="title">
+      <h2>SNS</h2>
+    </div>
+    <div class="main-container">
+      <ul class="main-text">
+        <li>
+          github <br />
+          <a href="https://github.com/nakaji25">https://github.com/nakaji25</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -62,6 +73,7 @@ export default defineComponent({
 }
 .main-text {
   list-style: none;
+  margin-bottom: 20px;
 }
 .time {
   font-weight: bold;
@@ -80,7 +92,10 @@ export default defineComponent({
   display: flex;
   align-items: center;
 }
-.myinfo h1 {
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
   padding-left: 50px;
 }
 @media screen and (max-width: 720px) {
