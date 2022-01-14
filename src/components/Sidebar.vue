@@ -44,7 +44,6 @@ export default defineComponent({
     handleResize() {
       if (window.matchMedia("(min-width: 720px)").matches) {
         this.isSmartphone = false;
-        console.log(this.isSmartphone);
       } else {
         this.isSmartphone = true;
       }
