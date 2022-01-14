@@ -108,7 +108,7 @@ export default defineComponent({
   transition: 0.4s ease;
 }
 .sidebar-container {
-  z-index: 2;
+  z-index: 20;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -120,6 +120,7 @@ export default defineComponent({
 }
 @media screen and (max-width: 720px) {
   .sidebar-container {
+    z-index: 20;
     right: 0;
     border-left: solid 1px #2c3e50;
   }

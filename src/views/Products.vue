@@ -18,13 +18,15 @@
     <div class="main-container">
       {{ minesweeper }}
     </div>
+    <img
+      class="minesweeper"
+      src="@/assets/minesweeper.png"
+      alt="minesweeperのプレイ画面"
+    />
     <div class="main-container">
-      <a href="https://github.com/nakaji25/minesweeper"
+      <a target="_blank" href="https://github.com/nakaji25/minesweeper"
         >https://github.com/nakaji25/minesweeper</a
       >
-    </div>
-    <div class="subtitle">
-      <h3>オセロ</h3>
     </div>
     <div class="title">
       <h2>Algorithm</h2>
@@ -33,7 +35,7 @@
       {{ algorithm }}
     </div>
     <div class="main-container">
-      <a href="https://github.com/nakaji25/Algorithm"
+      <a target="_blank" href="https://github.com/nakaji25/Algorithm"
         >https://github.com/nakaji25/Algorithm</a
       >
     </div>
@@ -46,9 +48,12 @@
     <div class="subtitle">
       <h3>ボールパズルゲーム</h3>
     </div>
-    <img class="theball" src="@/assets/theball.png" alt="TheBallのプレイ画面" />
     <div class="main-container">
-      <a href="https://github.com/nakaji25/Unity_TheBall"
+      {{ theball }}
+    </div>
+    <img class="game" src="@/assets/theball.png" alt="TheBallのプレイ画面" />
+    <div class="main-container">
+      <a target="_blank" href="https://github.com/nakaji25/Unity_TheBall"
         >https://github.com/nakaji25/Unity_TheBall</a
       >
     </div>
@@ -56,7 +61,11 @@
       <h3>雲登りゲーム</h3>
     </div>
     <div class="main-container">
-      <a href="https://github.com/nakaji25/ClimbCloud"
+      {{ climbcloud }}
+    </div>
+    <img class="game" src="@/assets/climbcloud.png" alt="TheBallのプレイ画面" />
+    <div class="main-container">
+      <a target="_blank" href="https://github.com/nakaji25/ClimbCloud"
         >https://github.com/nakaji25/ClimbCloud</a
       >
     </div>
@@ -67,13 +76,13 @@
       <ul class="references-text">
         <li>
           UnityではじめるC# 基礎編 改訂版 <br />
-          <a href="https://books.mdn.co.jp/books/3220303029/"
+          <a target="_blank" href="https://books.mdn.co.jp/books/3220303029/"
             >https://books.mdn.co.jp/books/3220303029/</a
           >
         </li>
         <li>
           Unityの教科書 Unity 2021完全対応版 <br />
-          <a href="https://www.sbcr.jp/product/4815611347/"
+          <a target="_blank" href="https://www.sbcr.jp/product/4815611347/"
             >https://www.sbcr.jp/product/4815611347/</a
           >
         </li>
@@ -92,8 +101,11 @@ export default defineComponent({
       clanguage: "C言語を講義で学んだ際に作成したものなどです。",
       minesweeper: "マインスイーパーはコンソールで遊ぶものになっています。",
       algorithm:
-        "講義で作成したアルゴリズムのコードで主にC言語を使用しています。",
+        "講義で作成したアルゴリズムのコードで主にC言語を使用しています。 \n さまざまなソートやグラフ探索などのアルゴリズムを実装しました。",
       unity: "参考書を用いてUnityを学習した際の制作物などです。",
+      theball:
+        "白いブロックをうごかしてボールを黄色のゴールに運べばクリアとなります。",
+      climbcloud: "猫を操作して頂上の旗をめざすゲームです。",
     };
   },
 });
@@ -135,9 +147,20 @@ export default defineComponent({
   padding-left: 5px;
   white-space: pre-line;
 }
-.theball {
+.game {
   width: 120px;
   height: 240px;
   margin-left: 80px;
+}
+.minesweeper {
+  width: 280px;
+  height: 160px;
+  margin-left: 80px;
+  border: solid 1px #2c3e50;
+}
+@media screen and (max-width: 720px) {
+  .minesweeper {
+    margin-left: 40px;
+  }
 }
 </style>

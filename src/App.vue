@@ -45,7 +45,7 @@ export default {
   background-color: #000000;
   border-bottom: solid 1px #2c3e50;
   text-align: center;
-  z-index: 20;
+  z-index: 10;
 }
 
 @media screen and (min-width: 720px) {
@@ -56,17 +56,6 @@ export default {
   .page-container {
     padding-left: 200px;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-*,
-:after,
-:before {
-  background-repeat: no-repeat;
-  box-sizing: inherit;
 }
 
 .fade-enter-active {
@@ -84,6 +73,17 @@ export default {
 
 .fade-leave-to {
   opacity: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
 }
 
 #app {

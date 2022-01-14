@@ -28,7 +28,9 @@
       <ul class="main-text">
         <li>
           github <br />
-          <a href="https://github.com/nakaji25">https://github.com/nakaji25</a>
+          <a target="_blank" href="https://github.com/nakaji25"
+            >https://github.com/nakaji25</a
+          >
         </li>
       </ul>
     </div>
@@ -42,7 +44,7 @@ export default defineComponent({
   data() {
     return {
       introduction:
-        "東京理科大学工学部情報工学科3年。\n 大学の授業では、人工知能やe-learningの勉強をしており、独学ではUnityでのゲーム作成をおこなっている。\n サークルではアニメ・声優研究会に所属している。\n また、幼少期からボーイスカウトに所属し現在まで続けている。",
+        "東京理科大学工学部情報工学科3年 \n 大学の授業では、人工知能やe-learningの勉強をしており、独学ではUnityでのゲーム作成をおこなっています。\n サークルではアニメ・声優研究会に所属しています。\n また、幼少期からボーイスカウトに所属し現在まで続けています。",
       careers: [
         { time: "2013年7月", text: "第16回日本スカウトジャンボリーに参加" },
         { time: "2015年7月", text: "第23回世界スカウトジャンボリー参加" },
