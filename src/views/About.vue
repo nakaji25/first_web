@@ -86,7 +86,9 @@
     <div class="subtitle">
       <h3>Pictures</h3>
     </div>
-    <div class="main-container">23wsjの時の写真をいくつか紹介します。</div>
+    <div class="main-container">
+      第23回世界スカウトジャンボリーの時の写真をいくつか紹介します。
+    </div>
     <div class="main-container carousel-container">
       <carousel>
         <slide v-for="value in wsj" :key="value.id">

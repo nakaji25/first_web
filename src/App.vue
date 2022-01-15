@@ -48,7 +48,7 @@ export default {
   z-index: 10;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 721px) {
   .header-container {
     margin-left: 200px;
     min-width: calc(100vw - 200px);

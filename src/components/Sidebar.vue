@@ -42,7 +42,7 @@ export default defineComponent({
   },
   methods: {
     handleResize() {
-      if (window.matchMedia("(min-width: 720px)").matches) {
+      if (window.matchMedia("(min-width: 721px)").matches) {
         this.isSmartphone = false;
       } else {
         this.isSmartphone = true;
