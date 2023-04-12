@@ -40,6 +40,24 @@
       </ul>
     </div>
     <div class="title">
+      <h2>Internship</h2>
+    </div>
+    <div class="subtitle">
+      <h3>Company</h3>
+    </div>
+    <div class="large-text">
+      {{ company}}
+    </div>
+    <div class="subtitle">
+      <h3>Details</h3>
+    </div>
+    <div class="main-container">
+      <ul class="main-text" v-for="(value, key) in robottte" :key="key">
+        <li class="time">{{ value.time }}</li>
+        <li class="text">{{ value.text }}</li>
+      </ul>
+    </div>
+    <div class="title">
       <h2>Boy Scouts</h2>
     </div>
     <div class="subtitle">
@@ -112,16 +130,20 @@ export default defineComponent({
     return {
       first:
         "このページは自分がこれまでに学んできたことや課外活動について記載します。",
-      course: "東京理科大学 工学部 情報工学科",
+      course: "東京理科大学 工学研究科 情報工学専攻",
       university: [
         {
-          grade: "1年生",
+          grade: "学部1年生",
           text: "基礎的な線形代数や離散数学、物理学HTML/CSS、C言語を学習。",
         },
-        { grade: "2年生", text: "線形代数の応用、統計学、アルゴリズム。" },
+        { grade: "学部2年生", text: "線形代数の応用、統計学、アルゴリズム。" },
         {
-          grade: "3年生",
+          grade: "学部3年生",
           text: "Pythonでの画像変換、データマイニング、人工知能。R言語でのテキストマイニングなど。",
+        },
+        {
+          grade: "学部4年生",
+          text: "Unityを使用し、医薬品製造における初学者向けのVR教育システムを開発。",
         },
       ],
       club: "アニメ・声優研究会",
@@ -130,6 +152,13 @@ export default defineComponent({
           time: "2019年11月23日・24日",
           text: "学園祭で声優のトークショーを開催 \n （23日:速水奨・野津山幸宏,24日:伊瀬茉莉也・平田裕香）",
         },
+      ],
+      company: "株式会社robottte",
+      robottte: [
+        {
+          time: "2022年3月",
+          text: "株式会社robottteにて、WebアプリケーションであるHRモンスターの開発に参加"
+        }
       ],
       group: "日本ボーイスカウト神奈川連盟横浜地区・横浜第8団",
       details:

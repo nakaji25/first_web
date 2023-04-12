@@ -69,6 +69,18 @@
         >https://github.com/nakaji25/ClimbCloud</a
       >
     </div>
+    <div class="subtitle">
+      <h3>卒業研究</h3>
+    </div>
+    <div class="main-container">
+      {{ G_Research }}
+    </div>
+    <img class = "researchsystem" src="@/assets/research_system.png" alt="VR教育システムのプレイ画面" />
+    <div class="main-container">
+      <a target="_blank" href="https://www.ieice.org/~iss/jpn/Publications/issposter_2023/data/pdf/ISS-P-042.pdf"
+        >2023年電子情報通信学会総合大会 情報・システムソサイエティ特別企画 ジュニア＆学生ポスターセッション予稿集</a
+      >
+    </div>
     <div class="title">
       <h2>参考書</h2>
     </div>
@@ -106,6 +118,7 @@ export default defineComponent({
       theball:
         "白いブロックをうごかしてボールを黄色のゴールに運べばクリアとなります。",
       climbcloud: "猫を操作して頂上の旗をめざすゲームです。",
+      G_Research: "医薬品製造における培地交換操作をVR空間に再現し、違反行為を行った際に改善を求めるフィードバックがなされます。",
     };
   },
 });
@@ -157,6 +170,10 @@ export default defineComponent({
   height: 160px;
   margin-left: 80px;
   border: solid 1px #2c3e50;
+}
+.researchsystem {
+  width: 380px;
+  margin-left: 80px;
 }
 @media screen and (max-width: 720px) {
   .minesweeper {
