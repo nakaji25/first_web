@@ -46,7 +46,7 @@
       <h3>Company</h3>
     </div>
     <div class="large-text">
-      {{ company}}
+      {{ company }}
     </div>
     <div class="subtitle">
       <h3>Details</h3>
@@ -157,8 +157,8 @@ export default defineComponent({
       robottte: [
         {
           time: "2022年3月",
-          text: "株式会社robottteにて、WebアプリケーションであるHRモンスターの開発に参加"
-        }
+          text: "株式会社robottteにて、WebアプリケーションであるHRモンスターの開発に参加",
+        },
       ],
       group: "日本ボーイスカウト神奈川連盟横浜地区・横浜第8団",
       details:
