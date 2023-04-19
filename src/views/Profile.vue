@@ -2,7 +2,7 @@
   <div class="default-container">
     <div class="title">
       <div class="myinfo">
-        <img class="icon" src="@/assets/nakaji.svg" alt="nakajiアイコン" />
+        <img class="icon" src="@/assets/nakaji.png" alt="nakajiアイコン" />
         <div class="name">Nakaji</div>
       </div>
     </div>
