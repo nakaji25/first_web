@@ -1,6 +1,6 @@
 # はじめに
 
-これは、Vue CLI を使いはじめて Vue.js で作成したポートフォリオです。
+これは、Vue CLI を使いはじめて Vue.js で作成した[ポートフォリオ](https://nakaji-portfolio.web.app/){:target="_blank"}です。
 
 ## 開発環境
 
